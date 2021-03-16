@@ -1,0 +1,21 @@
+*{margin:0;
+padding:0;}
+
+.container{ 
+    background-image: url('../images/download.jpeg');
+    background-size: cover;
+}
+.head{
+    font-size: 2rem;
+}
+form{ font-size: 1rem;
+color:#fff;
+}
+span{
+    color: #fff;
+}
+.btttn{ color: #fff;}
+
+body{
+    background-image: url('/images/back-2.jpeg')
+}

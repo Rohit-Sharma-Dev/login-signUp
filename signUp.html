@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login/SignUp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark ">
+       
+       <div class="d-flex justify-content-center text-center w-100">
+        <div class="head" >Register Yourself</div>
+       </div>
+    </nav>
+    <br>
+    
+    <div class="col-12 main-body my-5 ">
+        <div class="row">
+            <div class="container border">
+                <h2 class="text-center my-4 bg-light  py-2">Sign-Up</h2>
+                <form>
+                    <div>
+                        <input type='file' onchange="readURL(this);" />
+                        <img src="./images/img_avatar.png" id="profile-img" style="width: 5rem;" class="rounded-circle" alt=""> 
+                    </div>
+                                   
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">FirstName</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="FirstName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="inputAddress">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="rohit@123.com">
+                    </div>
+                    <div class="form-group">
+                    <label for="inputAddress2">password</label>
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Confirm Password</label>
+                        <input type="password" class="form-control" id="cpassword" placeholder="confirm password">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputState">country code</label>
+                            <select id="inputState" class="form-control">
+                            <option selected>india(+91)
+                            </option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">phone</label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        remember me
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" onclick="signUp()" class="btttn btn border-light">Sign in</button>
+
+                    
+                </form>
+                <span class="my-3">Already have account 
+                    <a href="./login.html" >login</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="js/signup.js">
+    </script>
+    <script>
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    </script>
+</body>
+    </html>
+    

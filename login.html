@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login/SignUp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-dark ">
+   
+   <div class="d-flex justify-content-center w-100 ">
+    <div class="head">Login</div>
+   </div>
+</nav>
+<br>
+
+
+
+<div class="card mx-5 ">
+  <div class="container">
+    <h2 class="text-center">Login</h2>
+    <form class="form" id="form">
+      <div class="form-group">
+        <label for="email">
+          <img src="./images/Gmail.max-1100x1100.png" style="width: 2rem;" alt="">
+          <span>Email</span> 
+        </label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">
+          <!-- <img src="./images/images.jpeg" style="width: 2rem;" alt=""> -->
+          <i class="far fa-bookmark"></i>
+          <span>Password</span> 
+       </label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-outline-warning my-2">login</button>
+
+      <div>
+        <div class="text">
+          <span>Dont'have account want to Register</span>
+          <div class="btn btn-outline-noner border-light my-2 mx-3">
+            <a  href="./signUp.html"> Register</a>
+          </div>
+          
+        </div>
+      </div>
+    </form>
+   
+  </div>
+</div>
+
+
+ 
+</div>
+<script src="./js/login.js"></script>
+
+</body>
+</html>
